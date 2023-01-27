@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #A44A37;
+  font-family: monospace;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #FF7D00;
+  font-family: monospace;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A44A37;
+  font-family: monospace;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #c09e97;
+  
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  font-family: monospace;
+  background-color: #A44A3f;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #A44A37;
+  padding-left: 20px;
+  font-family: monospace;
+ 
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #FFECD1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #A44A37;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: monospace;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-family: monospace;
+  background: #A44A3f;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A44A3f;
+  margin-top: 20px;
+  font-family: monospace;
+  
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Orangutans</h1>
+  <p>Orangutans are cool</p>
+</div>
+
+<div class="topnav">
+  <a href="https://youtu.be/0fts6x_EE_E">Orangutan Video</a>
+  <a href="https://borneoorangutansurvival.org/">Borneo Orangutan Survival Website</a>
+  <a href="https://en.wikipedia.org/wiki/Orangutan">Orangutan Wikipedia</a>
+  <a href="https://www.worldwildlife.org/species/orangutan" style="float:right">WWF Article</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Bornean Orangutan</h2>
+      <h5>Picture of Bornean Orangutan</h5>
+     <p><img src="images/beni2.jpg" width="500px"></p>
+     Beni is an Orangutan that was being rehabilitated to go into the wild once he was rescued. He is very overweigt and his caretakers had to put him on a special diet.</div>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Sumatran Orangutan</h2>
+        <h5>Picture of Sumatran Orangutan</h5>
+       <p><img src="images/sumatran.jpg" width="500px"></p>
+       Sumatran Orangutans are more endngered and they have brighter and longer fur. They also have long beards</div>
+    </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Where they live</h2>
+      <div class="fakeimg" style="height:100px;">Orangutans are great apes native to Southeast Asia.</div>
+      
+    </div>
+    <div class="card">
+      <h3>About Orangutans</h3>
+      <div class="fakeimg"><p>Orangutans spend most of their life in trees and are good climbers. they are very smart and have been known to use tools and use certain plants for medecine.</p></div>
+      
+    </div>
+    <div class="card">
+      <h3>Diet</h3>
+      <div class="fakeimg" style="height:100px;">Orangutans eat fruits, nuts, seeds,bugs and leaves.</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>I Hope You enjoy These Amazing Apes</h2>
+</div>
+
+</body>
+</html>
